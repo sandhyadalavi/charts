@@ -120,6 +120,8 @@ mgmt:
 #     - [group/]version/resource
     namespace: []
 #     - [group/]version/resource
+    ingress: []
+#     - [group/]version/resource
     path: kubernetes
 
 # Log level for OPA ('debug', 'info', 'error') (app default=info)
