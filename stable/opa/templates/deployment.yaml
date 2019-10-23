@@ -140,6 +140,9 @@ spec:
 {{- range .Values.mgmt.replicate.cluster }}
             - --replicate-cluster={{ . }}
 {{- end }}
+{{- range .Values.mgmt.replicate.ingress }}
+            - --replicate={{ . }}          
+{{- end }}
 {{- if or .Values.authz.enabled .Values.bootstrapPolicies }}
           volumeMounts:
             - name: bootstrap
